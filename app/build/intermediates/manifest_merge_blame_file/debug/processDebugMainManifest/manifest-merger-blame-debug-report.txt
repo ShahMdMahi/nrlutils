@@ -1,0 +1,235 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nrlit.nrlutils"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.READ_CONTACTS" />
+11-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:4:5-72
+11-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:4:22-69
+12    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+12-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:5:5-72
+12-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:5:22-69
+13    <uses-permission android:name="android.permission.READ_SMS" />
+13-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:7:5-65
+14-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:7:22-62
+15    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+15-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:8:5-76
+15-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+16-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:9:5-75
+16-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:9:22-72
+17    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+17-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:10:5-75
+17-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:10:22-72
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:11:5-71
+18-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:11:22-68
+19
+20    <uses-feature
+20-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:13:5-88
+21        android:name="android.hardware.telephony"
+21-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:13:19-60
+22        android:required="false" />
+22-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:13:61-85
+23    <uses-feature
+23-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:14:5-85
+24        android:name="android.hardware.camera"
+24-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:14:19-57
+25        android:required="false" />
+25-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:14:58-82
+26
+27    <permission
+27-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+28        android:name="com.nrlit.nrlutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.nrlit.nrlutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+32
+33    <application
+33-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:16:5-53:19
+34        android:allowBackup="true"
+34-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:17:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.13.1] C:\Users\shahm\.gradle\caches\8.13\transforms\d6a48ece77abe713e29a2bde42987f07\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+36        android:dataExtractionRules="@xml/data_extraction_rules"
+36-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:18:9-65
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:fullBackupContent="@xml/backup_rules"
+39-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:19:9-54
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:20:9-43
+41        android:label="@string/app_name"
+41-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:21:9-41
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:22:9-54
+43        android:supportsRtl="true"
+43-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:23:9-35
+44        android:theme="@style/Theme.NRLUtils" >
+44-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:24:9-46
+45        <activity
+45-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:25:9-34:20
+46            android:name="com.nrlit.nrlutils.MainActivity"
+46-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:26:13-41
+47            android:exported="true"
+47-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:27:13-36
+48            android:theme="@style/Theme.NRLUtils" >
+48-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:28:13-50
+49            <intent-filter>
+49-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:29:13-33:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:30:17-69
+50-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:30:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:32:17-77
+52-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:32:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity android:name="com.nrlit.nrlutils.ContactsActivity" />
+55-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:35:9-54
+55-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:35:19-51
+56        <activity android:name="com.nrlit.nrlutils.CallLogsActivity" />
+56-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:36:9-54
+56-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:36:19-51
+57        <activity android:name="com.nrlit.nrlutils.MessagesActivity" />
+57-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:37:9-54
+57-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:37:19-51
+58        <activity android:name="com.nrlit.nrlutils.CameraActivity" />
+58-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:38:9-52
+58-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:38:19-49
+59        <activity android:name="com.nrlit.nrlutils.PhotosActivity" />
+59-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:39:9-52
+59-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:39:19-49
+60        <activity android:name="com.nrlit.nrlutils.VideoRecorderActivity" />
+60-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:40:9-59
+60-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:40:19-56
+61        <activity android:name="com.nrlit.nrlutils.VideosActivity" />
+61-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:41:9-52
+61-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:41:19-49
+62        <activity android:name="com.nrlit.nrlutils.AudioRecorderActivity" />
+62-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:42:9-59
+62-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:42:19-56
+63        <activity android:name="com.nrlit.nrlutils.AudiosActivity" />
+63-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:43:9-52
+63-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:43:19-49
+64        <activity android:name="com.nrlit.nrlutils.ScreenRecorderActivity" />
+64-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:44:9-60
+64-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:44:19-57
+65        <activity android:name="com.nrlit.nrlutils.ScreenRecordsActivity" />
+65-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:45:9-59
+65-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:45:19-56
+66        <activity android:name="com.nrlit.nrlutils.FilesActivity" />
+66-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:46:9-51
+66-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:46:19-48
+67        <activity android:name="com.nrlit.nrlutils.ScreenshotsActivity" />
+67-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:47:9-57
+67-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:47:19-54
+68        <activity android:name="com.nrlit.nrlutils.MapsActivity" />
+68-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:48:9-50
+68-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:48:19-47
+69        <activity android:name="com.nrlit.nrlutils.SettingsActivity" />
+69-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:49:9-54
+69-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:49:19-51
+70        <activity android:name="com.nrlit.nrlutils.AboutActivity" />
+70-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:50:9-51
+70-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:50:19-48
+71        <activity android:name="com.nrlit.nrlutils.HelpActivity" />
+71-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:51:9-50
+71-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:51:19-47
+72        <activity android:name="com.nrlit.nrlutils.PrivacyPolicyActivity" />
+72-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:52:9-59
+72-->C:\Users\shahm\Desktop\Projects\nrlutils\app\src\main\AndroidManifest.xml:52:19-56
+73        <activity
+73-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\a1851be9656e3c6469d279014af61ed2\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+74            android:name="androidx.compose.ui.tooling.PreviewActivity"
+74-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\a1851be9656e3c6469d279014af61ed2\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+75            android:exported="true" />
+75-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\a1851be9656e3c6469d279014af61ed2\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+76        <activity
+76-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\6c564a150919646baa2ac3dbbd58af90\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+77            android:name="androidx.activity.ComponentActivity"
+77-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\6c564a150919646baa2ac3dbbd58af90\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+78            android:exported="true" />
+78-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\shahm\.gradle\caches\8.13\transforms\6c564a150919646baa2ac3dbbd58af90\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+79
+80        <provider
+80-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+81            android:name="androidx.startup.InitializationProvider"
+81-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+82            android:authorities="com.nrlit.nrlutils.androidx-startup"
+82-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+83            android:exported="false" >
+83-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+84            <meta-data
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+86                android:value="androidx.startup" />
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\shahm\.gradle\caches\8.13\transforms\35b22337d3be012b0ca1533c051f07b4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\shahm\.gradle\caches\8.13\transforms\55630b0abdcbc7d98a1b31078f6a0f0d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+88-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\shahm\.gradle\caches\8.13\transforms\55630b0abdcbc7d98a1b31078f6a0f0d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+89                android:value="androidx.startup" />
+89-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\shahm\.gradle\caches\8.13\transforms\55630b0abdcbc7d98a1b31078f6a0f0d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+90            <meta-data
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+92                android:value="androidx.startup" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+93        </provider>
+94
+95        <receiver
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+96            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+97            android:directBootAware="false"
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+98            android:enabled="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+99            android:exported="true"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+100            android:permission="android.permission.DUMP" >
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+102                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+105                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+108                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+111                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shahm\.gradle\caches\8.13\transforms\235791d48cfd4280ef28d513f0a6466b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+112            </intent-filter>
+113        </receiver>
+114    </application>
+115
+116</manifest>

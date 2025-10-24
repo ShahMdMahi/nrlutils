@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nrlit.nrlutils"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="36" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <permission
+        android:name="com.nrlit.nrlutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nrlit.nrlutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NRLUtils" >
+        <activity
+            android:name="com.nrlit.nrlutils.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NRLUtils" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nrlit.nrlutils.ContactsActivity" />
+        <activity android:name="com.nrlit.nrlutils.CallLogsActivity" />
+        <activity android:name="com.nrlit.nrlutils.MessagesActivity" />
+        <activity android:name="com.nrlit.nrlutils.CameraActivity" />
+        <activity android:name="com.nrlit.nrlutils.PhotosActivity" />
+        <activity android:name="com.nrlit.nrlutils.VideoRecorderActivity" />
+        <activity android:name="com.nrlit.nrlutils.VideosActivity" />
+        <activity android:name="com.nrlit.nrlutils.AudioRecorderActivity" />
+        <activity android:name="com.nrlit.nrlutils.AudiosActivity" />
+        <activity android:name="com.nrlit.nrlutils.ScreenRecorderActivity" />
+        <activity android:name="com.nrlit.nrlutils.ScreenRecordsActivity" />
+        <activity android:name="com.nrlit.nrlutils.FilesActivity" />
+        <activity android:name="com.nrlit.nrlutils.ScreenshotsActivity" />
+        <activity android:name="com.nrlit.nrlutils.MapsActivity" />
+        <activity android:name="com.nrlit.nrlutils.SettingsActivity" />
+        <activity android:name="com.nrlit.nrlutils.AboutActivity" />
+        <activity android:name="com.nrlit.nrlutils.HelpActivity" />
+        <activity android:name="com.nrlit.nrlutils.PrivacyPolicyActivity" />
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.nrlit.nrlutils.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
